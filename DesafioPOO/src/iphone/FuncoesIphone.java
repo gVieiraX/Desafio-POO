@@ -1,9 +1,12 @@
+package iphone;
+
 import iphone.aparelhotelefonico.AparelhoTelefonico;
 import  iphone.navegacaointernet.NavegadorInternet;
 import iphone.reproduzirmusica.ReprodutorMusical;
 
-public  class FuncoesIphone {
+public  class FuncoesIphone  implements  AparelhoTelefonico, NavegadorInternet, ReprodutorMusical{
 
+    //Reprodutor Musical
     public  void tocar(){
         System.out.println("Tocando música.");
     }
@@ -12,13 +15,13 @@ public  class FuncoesIphone {
 
     }
 
-
+    //Navegar na Internet
     public  void exibirPagina(){
-        System.out.println("Exibindo página");
+        System.out.println("Exibindo página na internet.");
 
     }
     public  void novaAba(){
-        System.out.println("Abrindo nova aba.");
+        System.out.println("Abrindo nova aba no navegador.");
 
     }
     public  void fecharAba(){
@@ -30,7 +33,7 @@ public  class FuncoesIphone {
 
     }
 
-
+    //Ações do aparelho telefônico
     public void ligar(){
         System.out.println("Ligando iPhone.");
 
